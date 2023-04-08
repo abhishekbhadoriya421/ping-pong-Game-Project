@@ -1,0 +1,33 @@
+console.log("hey");
+// The innerWidth is a property of the window object. It returns the width of the
+// window's layout viewport into which the browser draws a web page.
+let conatiner = document.getElementsByClassName('container')[0];
+let box = document.getElementById('box');
+
+
+/*offsetWidth and offsetHeight
+The offsetWidth and offsetHeight are properties of HTML elements that return the
+CSS width and height of an element, respectively, including borders, padding and
+vertical scrollbars (if rendered). It returns the value in pixels.
+*/
+// console.log(conatiner.offsetHeight);
+// console.log(conatiner.offsetWidth);
+
+let windowInnerWidth = window.innerWidth;
+// console.log(windowInnerWidth);
+// console.log(window.innerHeight);
+
+
+// console.log(box.offsetTop);
+// console.log(box.offsetLeft);
+
+let domRect = box.getBoundingClientRect();
+//properties available
+console.log(domRect.top);
+console.log(domRect.bottom);
+console.log(domRect.left);
+console.log(domRect.right);
+console.log(domRect.width);
+console.log(domRect.height);
+console.log(domRect.x);
+console.log(domRect.y);

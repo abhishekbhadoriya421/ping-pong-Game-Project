@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:rgb(224 221 236); position: fixed; top:0px; margin: 0px 25%;">Ping Pong Game</h1>
+        <div id="gameBoard">
+
+            <p id="TopPaddle" class="paddle"></p>
+            <p id="ball"></p>
+            <div id="StartGame"><p class="counting">StartGame</p> <i class="fa-solid fa-play"></i></div>
+            <p id="BottomPaddle" class="paddle"></p>
+  
+        </div>
+        <div class="Movingbtn">
+            <h4>Use them to move the paddle</h4>
+            <p class="btnL" id="btnL">&lt; L</p>
+            <p class="btnR" id="btnR">R &gt;</p>
+        </div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="components/ballSound.mp3" type="audio/ogg">
+        <source src="components/ballSound.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="myAudio2">
+        <source src="components/ballSound2.mp3" type="audio/ogg">
+        <source src="components/ballSound2.mp3" type="audio/mpeg">
+      </audio>
+   <script src="index.js"></script> 
+   <script src="https://kit.fontawesome.com/7d68f54f88.js" crossorigin="anonymous"></script>
+</body>
+</html>

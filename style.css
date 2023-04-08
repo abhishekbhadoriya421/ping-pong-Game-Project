@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Start Game */
+#StartGame{
+    width: 120px;
+    height: 60px;;
+    background: linear-gradient(90deg,red , orange);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    background:url('components/backgroundImg.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Game Board */
+#gameBoard{
+    width: 80vw;
+    height: 80vh;
+    overflow-x:hidden ;
+    background: #205d27;
+    box-shadow:0px 0px 12px 1px #c6c4c8;
+    position: relative;
+}
+
+/* Paddles */
+.paddle{
+    width: 60px;
+    height: 10px;
+    background-color: #2d0bf5;
+    position: absolute;
+}
+    /* Top */
+    #TopPaddle{
+        top: 1px;
+    }
+    /* Bottom */
+    #BottomPaddle{
+       bottom: 1px;
+       transition: all 4s linear ;
+    }
+
+    /* Ball Of Game */
+    #ball{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        transition: all 4s linear ;
+    }
+
+
+/* Moving Button Section */
+.Movingbtn{
+    width: 200px;
+    height: 130px;
+    position: relative;
+    color: white;
+    background-color: #807c3d;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -2px white;
+}
+
+
+/* All Buttons */
+.Movingbtn p{
+    width: 28%;
+    height: 17%;
+    border: 1xp solid white;
+    background-color: #82b8baaf;
+    position: absolute;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+/* Left Button */
+.btnL{
+    top: 50%;
+    left: 10px;
+    text-align: center;}
+
+/* Right Button */
+.btnR{
+    top: 50%;
+    right: 10px;
+
+}
+
+
+
+/* media query */
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+    .Movingbtn{
+        margin-top: 20px; 
+        align-self: center;  
+    }
+    #gameBoard{
+        width: 95vw;
+        height: 95vh;
+    }
+}
